@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Menu</title>
+</head>
+<body>
+  <h1>Add Menu for <%= restaurant.name %></h1>
+  <form action="/menus/add/<%= restaurant._id %>" method="POST">
+    <label for="name">Menu Name:</label>
+    <input type="text" name="name">
+    <label for="image">Menu Image URL:</label>
+    <input type="text" name="image">
+    <!-- Add input fields for categories here -->
+    <button type="submit">Add Menu Item</button>
+  </form>
+</body>
+</html>
